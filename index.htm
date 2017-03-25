@@ -13,7 +13,6 @@
   <meta content="email=no" name="format-detection">
   <link rel="stylesheet" href="./index_files/wrap_common.css">
   <link rel="stylesheet" href="./index_files/animate_v05.28.css">
-  <link rel="icon" href="http://qnm.hunliji.com/o_1ah8sh0g58hqcgc1sfm1clv1t34c.ico" type="image/x-icon">
 
   <style>
    body {background:#000}
@@ -119,7 +118,7 @@
         .fb_send_gift{}
         .fb_link {margin:6px auto 0;width:98%;overflow:hidden;}
         .fb_link button{line-height:36px;border-radius:6px;padding:0 8px;background:#fff;border:1px solid #ff705e;font-size:14px;}
-        .fb_link button:nth-child(1) {float:left;position:relative;padding-left:28px;color:#ff705e;}
+        .fb_link button:nth-child(1) {float:left;position:relative;width: 100%;color:#ff705e;}
 
         .fb_link button:nth-child(2) {float:right;position:relative;padding-left:28px;border-color:#ff705e;color:#fff;background:#ff705e}
         /*.icon.iconfont {left:5px;}*/
@@ -172,7 +171,7 @@
     .icon-plumage:before { content: "\e600"; }
 
   </style>
-<script type="text/javascript" id="wxjscfg">wx.config({debug: false,appId: "wx6260e0fbaa341dd2",timestamp: "1490456980",nonceStr: "4pUzeuq6qSZpWyAU",signature: "0484dda12118a246d09f8efacd5eb7105229ae50",jsApiList: ["checkJsApi","onMenuShareTimeline","onMenuShareAppMessage","onMenuShareQQ","onMenuShareWeibo","hideMenuItems","showMenuItems","hideAllNonBaseMenuItem","showAllNonBaseMenuItem","translateVoice","startRecord","stopRecord","onRecordEnd","playVoice","pauseVoice","stopVoice","uploadVoice","downloadVoice","chooseImage","previewImage","uploadImage","downloadImage","getNetworkType","openLocation","getLocation","hideOptionMenu","showOptionMenu","closeWindow","scanQRCode","chooseWXPay","openProductSpecificView","addCard","chooseCard","openCard"]});console.log("jsticket:bxLdikRXVbTPdHSM05e5u_-fQdn6RX3IgAXRJBBWxr5eqipwKCXrK_KzUMaHAG3BL-aYorn5LUp4bVqvJkDBew");console.log("url:https://www.hunliji.com/p/wedding/Public/wap/invitationCard/index.html?card_id=MzQ1OTE5OWZpcmVfY2xvdWQ&speech_id=MjU5NDU5OGZpcmVfY2xvdWQ");</script></head>
+</head>
 <body>
     <div class="loadmore-loading" style="display: none;"><div></div><p></p></div>
     <div id="wrap" style="width: 1674px; height: 960px;">
@@ -185,7 +184,6 @@
     <script src="./index_files/zepto.min.js"></script>
     <script src="./index_files/jweixin-1.0.0.js"></script>
     <script src="./index_files/base64.min.js"></script>
-    <script src="./index_files/wxShare.min.js"></script>
     <!-- <script src="//map.qq.com/api/js?v=2.exp&libraries=convertor"></script> -->
     <script>
     function stopMusic(){
@@ -277,13 +275,13 @@
               weddingCard.writeCookie('_add',result.data.cardInfo.place);
               weddingCard.writeCookie('_bride',result.data.cardInfo.bride_name);
               weddingCard.writeCookie('_groom',result.data.cardInfo.groom_name);
-              wxShare.setWeiXinData({
-                    "appId": "",
-                      "imgUrl" : ''+result.data.share_img+'?imageView2/2/w/200/h/200',
-                      "link" : location.href,
-                      "desc" : result.data.cardInfo.groom_name+'与'+result.data.cardInfo.bride_name+'要结婚了，诚挚邀请您光临。',
-                      "title" : result.data.cardInfo.groom_name+'与'+result.data.cardInfo.bride_name+'的结婚邀请'
-              });
+              // wxShare.setWeiXinData({
+              //       "appId": "",
+              //         "imgUrl" : ''+result.data.share_img+'?imageView2/2/w/200/h/200',
+              //         "link" : location.href,
+              //         "desc" : result.data.cardInfo.groom_name+'与'+result.data.cardInfo.bride_name+'要结婚了，诚挚邀请您光临。',
+              //         "title" : result.data.cardInfo.groom_name+'与'+result.data.cardInfo.bride_name+'的结婚邀请'
+              // });
             }
 
 
@@ -306,10 +304,12 @@
             }
 
           weddingCard.imgCont=[];
-          $.ajax({
-            url : weddingCard.url,
-            type:'get',
-            success:function(result){
+          var result = {"status":{"RetCode":0,"msg":"success"},"data":{"guest_template":1,"page":[{"id":18194330,"layout":{"background":"http:\/\/qnm.hunliji.com\/Fl4g7aH4GPEowvOZi24NNDuPhErG","elements":[{"animate":"fadeInUp","img":"http:\/\/qnm.hunliji.com\/Frge_PAKPFy_YruIahRgFJHOtZCY","x":"285","y":"76","width":"182","height":"159","z_order":"2","delay":"1800ms"},{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/Fvib7C7WjpDdnA9gxpm23bPOY-HT","z_order":"2","x":"351","y":"948","width":"45","height":"15","delay":"1000ms"},{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/Fmb0f4gi0Lh5I5ETqNbnHCPtNPjF","z_order":"2","width":"45","height":"15","x":"351","y":"1140","delay":"1500ms"},{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/FpVVmKHEilzZ1ZjzEjALqVkgr7PU","x":"168","y":"283","width":"412","height":"412","z_order":"1","delay":"100ms"},{"animate":"fadeIn","img":"http:\/\/qnm.hunliji.com\/FmqrKRmo7Mjhd-KzKO7mkQwi36D1","x":"353","y":"886","width":"44","height":"44","z_order":"2","delay":"700ms"},{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/FgRC6lDn19qHP0w_dOmbatpMvH9z","delay":"200ms","rotate":0,"x":"181","y":"296","width":"388","height":"388","mask":{"img":"http:\/\/qnm.hunliji.com\/FuUdGZcOcFOcoa9rDuHqYdnzyXaD","width":"388","height":"388"},"z_order":"0"},{"animate":"fadeInNormal","img":"http:\/\/qnm.hunliji.com\/Fr4Ks7WabOllyi5loTLqS5BuguGH","delay":"800ms","rotate":0,"x":"128.000000","y":"879.000000","width":"218.000000","height":"57.000000","z_order":"2"},{"animate":"fadeInNormal","img":"http:\/\/qnm.hunliji.com\/FqwhtbpLxkjsKCqgtGgToBSiKe8d","delay":"800ms","rotate":0,"x":"416.000000","y":"879.000000","width":"218.000000","height":"57.000000","z_order":"2"},{"animate":"fadeInNormal","img":"http:\/\/qnm.hunliji.com\/FrPv3w5GZKeAf12nU4V50p5Ap-gK","delay":"1100ms","rotate":0,"x":"202.000000","y":"985.000000","width":"361.000000","height":"28.000000","z_order":"2"},{"animate":"fadeInNormal","img":"http:\/\/qnm.hunliji.com\/FmbQGmF9t-FzN8c0HucsTKFGc5Wv","delay":"1100ms","rotate":0,"x":"213.000000","y":"1034.000000","width":"323.000000","height":"29.000000","z_order":"2"},{"animate":"fadeInNormal","img":"http:\/\/qnm.hunliji.com\/FpGhLKeM8QQAMVupgvaX_25git-d","delay":"1400ms","rotate":0,"x":"202.000000","y":"1083.000000","width":"344.000000","height":"67.000000","z_order":"2"}]}},{"id":18194502,"layout":{"background":"http:\/\/qnm.hunliji.com\/FqlRNGX1irHUZ3Ofqu2oRKGrwSoW","elements":[{"animate":"fadeInNormal","img":"http:\/\/qnm.hunliji.com\/FgkldaE6CuuBbF1vvNOlLuRPn3M8","x":"148","y":"1074","width":"465","height":"55","rotate":"0","z_order":"2","delay":"1000ms"},{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/FsvcsrXO7xf3Y6BGQ8pa0CN92CWW","delay":"300ms","rotate":0,"x":"52","y":"59","width":"652","height":"871","mask":{"img":"http:\/\/qnm.hunliji.com\/FlAYoioGzIMrPQiq7RbBpUaaIIJz","width":"652","height":"871"},"z_order":"1"},{"animate":"fadeInUp","img":"http:\/\/qnm.hunliji.com\/FixMJMsMajn3RG5CFDM9PHB_MVJ3","delay":"500ms","rotate":0,"x":"147.373051","y":"988.632813","width":"455.253897","height":"62.734374","z_order":"1"}]}},{"id":18194573,"layout":{"background":"http:\/\/qnm.hunliji.com\/FjuJaWm5erAsKPhYIIX8IH9afhHc","elements":[{"animate":"fadeInUp","img":"http:\/\/qnm.hunliji.com\/FtRytuOLpwEIXxG-Qikf6H_gRJ1X","x":"156","y":"1099","width":"439","height":"45","rotate":"0","z_order":"1","delay":"2200ms"},{"animate":"fadeInNormal","img":"http:\/\/qnm.hunliji.com\/Fqy7r2h9FEjzWlskQGMaL-W5_dMg","x":"47","y":"125","width":"625","height":"736","rotate":"0","z_order":"1","delay":"900ms"},{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/FnmPLERZmT-4pY93vPtjDvN-N6BF","x":"25","y":"68","width":"700","height":"1084","rotate":"0","z_order":"0","delay":"200ms"},{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/FljN5wqHaJIG39BdgqlPHnLZ6isM","x":"13","y":"68","height":"1084","width":"724","rotate":"0","z_order":"1","delay":"100ms"},{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/FnoEltWUhtmPbrvHAyvrIzzGn3LF","x":"231","y":"937","width":"216","height":"133","rotate":"0","z_order":"1","delay":"1800ms"},{"animate":"fadeInLeft","img":"http:\/\/qnm.hunliji.com\/Fq7HAmQz826XPd-C1UaG_1P-tPdu","delay":"600ms","rotate":0,"x":"62","y":"121","width":"625","height":"746","mask":{"img":"http:\/\/qnm.hunliji.com\/FrbWb5m_oMKM6qUjO8qdNyUaXFwn","width":"625","height":"746"},"z_order":"2"}]}},{"id":18194646,"layout":{"background":"http:\/\/qnm.hunliji.com\/FnXrdmVARIyEFD_4PYM2k6HPfhH2","elements":[{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/FrdqwUFpkJr67tKnEbjUR8vVVOcF","x":"107","y":"286","width":"62","height":"62","rotate":"0","z_order":"2","delay":"1300ms"},{"animate":"fadeInRight","img":"http:\/\/qnm.hunliji.com\/Fo65_EA_CuRjVqA2drr7cDkRO7UK","x":"52","y":"265","width":"159","height":"153","rotate":"0","z_order":"1","delay":"1000ms"},{"animate":"fadeInNormal","img":"http:\/\/qnm.hunliji.com\/FnKeTMd5qwOzHN8LtMG_XqUA1dtm","x":"138","y":"153","width":"134","height":"237","rotate":"0","z_order":"2","delay":"1500ms"},{"animate":"fadeInNormal","img":"http:\/\/qnm.hunliji.com\/FnQaHhrlFngSNp4zzi9Pkf2cUYq1","x":"22","y":"26","rotate":"0","z_order":"2","delay":"100ms"},{"animate":"fadeInUp","img":"http:\/\/qnm.hunliji.com\/FlL6LbGUtXrgigvUJ2XNWRqI-gU5","x":"360","y":"91","width":"257","height":"62","rotate":"0","z_order":"2","delay":"600ms"},{"animate":"fadeInUp","img":"http:\/\/qnm.hunliji.com\/FovqgjsuGbSQlO-iZiIZ-QK03tCu","width":"102","height":"39","x":"316","y":"963","rotate":"0","z_order":"2","delay":"2500ms"},{"animate":"fadeInNormal","img":"http:\/\/qnm.hunliji.com\/FsRsBcGwjpVB8YZARW93LxKCQkTM","x":"183","y":"162","width":"69","height":"210","rotate":"0","z_order":"2","delay":"1800ms"},{"animate":"fadeInNormal","img":"http:\/\/qnm.hunliji.com\/FrQi8M0ipuUAoIl03-AZLfx9OqUd","x":"52","y":"972","width":"261","height":"13","rotate":"0","z_order":"2","delay":"2800ms"},{"animate":"fadeInNormal","img":"http:\/\/qnm.hunliji.com\/FmBT0_a5v3_uhq0EczwU1O0PGPHi","x":"432","y":"972","width":"261","height":"13","rotate":"0","z_order":"2","delay":"2800ms"},{"animate":"fadeInRight","img":"http:\/\/qnm.hunliji.com\/FlFnyN6JI0pnDCVa8rWq3THToxoJ","delay":"300ms","rotate":0,"x":"363","y":"159","width":"331","height":"286","mask":{"img":"http:\/\/qnm.hunliji.com\/FgLbwcs9fXgVqD3UdDv3EDhXTabC","width":"331","height":"286"},"z_order":"0"},{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/Fua6XImBdoTSna044_Xo9Zim2rlO","delay":"2200ms","rotate":0,"x":"57","y":"499","width":"637","height":"449","mask":{"img":"http:\/\/qnm.hunliji.com\/Fl-hKMYh7tdWuwwJGpXC15HFQhnp","width":"637","height":"449"},"z_order":"0"},{"animate":"fadeInNormal","img":"http:\/\/qnm.hunliji.com\/Foz7mcfqd7hhNrNvrbzFex-4tOi_","delay":"3200ms","rotate":0,"x":"166.500011","y":"1033.992189","width":"417.999978","height":"65.015622","z_order":"1"}]}},{"id":18194838,"layout":{"background":"http:\/\/qnm.hunliji.com\/FtijMbQjdCahQkTp311omoOTM-rB","elements":[{"animate":"slideDown","img":"http:\/\/qnm.hunliji.com\/FvMEm0GFrI2KX6hhB8WgrNTX4eHl","x":"210","y":"75","width":"327","height":"107","rotate":"0","z_order":"1","delay":"800ms"},{"animate":"fadeInLeft","img":"http:\/\/qnm.hunliji.com\/FvyXXIyfyGtGVKEs--3uo2eQ3WM1","x":"94","y":"293","width":"270","height":"322","rotate":"0","z_order":"3","delay":"300ms"},{"animate":"fadeInRight","img":"http:\/\/qnm.hunliji.com\/FvyXXIyfyGtGVKEs--3uo2eQ3WM1","x":"387","y":"293","width":"270","height":"322","rotate":"0","z_order":"3","delay":"300ms"},{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/FoRFu9PVAmgKmS2WizkOxLHy9nKt","x":"95","y":"635","width":"563","height":"422","rotate":"0","z_order":"3","delay":"600ms"},{"animate":"fadeInLeft","img":"http:\/\/qnm.hunliji.com\/FvkEoc-Ekj8QMnoVUSdjCPfQ05zh","delay":"300ms","rotate":0,"x":"100","y":"300","width":"258","height":"310","mask":{"img":"http:\/\/qnm.hunliji.com\/FrrH7jCYVwZYVq70Yml3P4xN8_2k","width":"258","height":"310"},"z_order":"1"},{"animate":"fadeInRight","img":"http:\/\/qnm.hunliji.com\/Fhs2UUhGxnOX2075ntmVYhv6LjP_","delay":"300ms","rotate":0,"x":"393","y":"300","width":"258","height":"310","mask":{"img":"http:\/\/qnm.hunliji.com\/FnF7U3kfZhjiud5o6D1ZNB2Uk2jA","width":"258","height":"310"},"z_order":"1"},{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/Fh7rzu_hvn9WK0ehCKe6oVMx3Nnc","delay":"600ms","rotate":0,"x":"100","y":"642","width":"551","height":"410","mask":{"img":"http:\/\/qnm.hunliji.com\/FgOoMjdJ3f2s97YkC_oT5ihCaNah","width":"551","height":"410"},"z_order":"1"},{"animate":"fadeInDown","img":"http:\/\/qnm.hunliji.com\/FqxfWPpS2izTy6poFE-yOJwd7mVN","delay":"1100ms","rotate":0,"x":"130.683581","y":"199.738280","width":"484.632839","height":"36.523439","z_order":"1"}]}},{"id":18194927,"layout":{"background":"http:\/\/qnm.hunliji.com\/Fv0C41FBbmWH8r6RnGiUT45GxqYT","elements":[{"animate":"fadeInUp","img":"http:\/\/qnm.hunliji.com\/FhG3MryUV3mFgEW7hc-ZJoahOOtU","x":"48","y":"1089","width":"636","height":"28","rotate":"0","z_order":"3","delay":"1800ms"},{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/FrLk1-aE9aAGBHLxjWfGckbMoVoS","x":"48","y":"43","width":"651","height":"1015","rotate":"0","z_order":"2","delay":"500ms"},{"animate":"fadeInDown","img":"http:\/\/qnm.hunliji.com\/FrvkmuGeNmUoUGDSzR1AebXFJ-BO","x":"66","y":"527","width":"74","height":"512","rotate":"0","z_order":"2","delay":"1000ms"},{"animate":"fadeInLeft","img":"http:\/\/qnm.hunliji.com\/FvnLH7zgfyb9jF__ar_Hg_Ahgqwi","x":"447","y":"18","width":"288","height":"119","rotate":"0","z_order":"3","delay":"2300ms"},{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/FrY2dY7CszfuDpL_R4hV1_I2HXfL","x":"0","y":"0","width":"750","height":"1220","rotate":"0","z_order":"0","delay":"100ms"},{"animate":"zoomIn","img":"http:\/\/qnm.hunliji.com\/Ftg5j_j5t7WPDqFyEO1Q7IsdpC5H","delay":"500ms","rotate":0,"x":"68","y":"61","width":"611","height":"980","mask":{"img":"http:\/\/qnm.hunliji.com\/FqKyIZYx58wNd8rWhCm8jR7QLes5","width":"611","height":"980"},"z_order":"1"}]}},{"id":18194331,"layout":{"background":"http:\/\/qnm.hunliji.com\/FmmPFBOQhfB4YMuuVcEjDtVh52hA","elements":[],"layTemplate":"layTemplate_feedback","navButton":{"boxColor":"#f3442e","fillColor":"#ffffff","textColor":"#f3442e"},"makeButton":{"boxColor":"#ffa73c","fillColor":"#ffa73c","textColor":"#ffffff"},"themeColor":"#f3442e"}}],"cardInfo":{"longtitude":120.67812137197,"time":"2017-05-01 10:00:00","theme_id":64,"latitude":30.554527076537,"place":"\u6d59\u6c5f\u7701\u6d77\u5b81\u5e02\u6d77\u660c\u8857\u9053\u6cfe\u957f\u5c0f\u533a\u4e8c\u91cc31\u53f7","bride_name":"\u7ae0\u6653\u71d5","groom_name":"\u90ed\u4f1f","user_id":"5813992","updated_at":"2017-03-25 23:26:09","created_at":"2017-03-25 23:17:28","id":3459199,"front_page":{"id":18194330,"texts":[{"id":516,"font_size":48,"frame":"128.000000,879.000000,218.000000,57.000000","h5_text_rotate_degree":0,"type":"groom","color":"#c30d23","alignment":2,"trans_info":"1.000000,0.000000,-0.000000,1.000000,0.000000,0.000000","show_text":true,"h5_text_image_path":"http:\/\/qnm.hunliji.com\/Fr4Ks7WabOllyi5loTLqS5BuguGH","h5_text_image_frame":"128.000000,879.000000,218.000000,57.000000","font_name":"FZLanTingHeiS-EL-GB","content":"\u90ed\u4f1f"},{"id":517,"font_size":48,"frame":"416.000000,879.000000,218.000000,57.000000","h5_text_rotate_degree":0,"type":"bride","color":"#c30d23","alignment":0,"trans_info":"1.000000,0.000000,-0.000000,1.000000,0.000000,0.000000","show_text":true,"h5_text_image_path":"http:\/\/qnm.hunliji.com\/FqwhtbpLxkjsKCqgtGgToBSiKe8d","h5_text_image_frame":"416.000000,879.000000,218.000000,57.000000","font_name":"FZLanTingHeiS-EL-GB","content":"\u7ae0\u6653\u71d5"},{"id":518,"font_size":28,"frame":"202.000000,985.000000,361.000000,28.000000","h5_text_rotate_degree":0,"type":"time","color":"#c30d23","alignment":1,"trans_info":"1.000000,0.000000,-0.000000,1.000000,0.000000,0.000000","show_text":true,"h5_text_image_path":"http:\/\/qnm.hunliji.com\/FrPv3w5GZKeAf12nU4V50p5Ap-gK","h5_text_image_frame":"202.000000,985.000000,361.000000,28.000000","font_name":"FZLanTingHeiS-EL-GB","content":"2017\u5e7405\u670801\u65e510\u65f600\u5206"},{"id":519,"font_size":28,"frame":"213.000000,1034.000000,323.000000,29.000000","h5_text_rotate_degree":0,"type":"lunar","color":"#c30d23","alignment":1,"trans_info":"1.000000,0.000000,-0.000000,1.000000,0.000000,0.000000","show_text":true,"h5_text_image_path":"http:\/\/qnm.hunliji.com\/FmbQGmF9t-FzN8c0HucsTKFGc5Wv","h5_text_image_frame":"213.000000,1034.000000,323.000000,29.000000","font_name":"FZLanTingHeiS-EL-GB","content":"\u519c\u5386:\u56db\u6708\u521d\u516d(\u5468\u4e00)"},{"id":520,"font_size":28,"frame":"202.000000,1083.000000,344.000000,67.000000","h5_text_rotate_degree":0,"type":"location","color":"#c30d23","alignment":1,"trans_info":"1.000000,0.000000,-0.000000,1.000000,0.000000,0.000000","show_text":true,"h5_text_image_path":"http:\/\/qnm.hunliji.com\/FpGhLKeM8QQAMVupgvaX_25git-d","h5_text_image_frame":"202.000000,1083.000000,344.000000,67.000000","font_name":"FZLanTingHeiS-EL-GB","content":"\u6d59\u6c5f\u7701\u6d77\u5b81\u5e02\u6d77\u660c\u8857\u9053\u6cfe\u957f\u5c0f\u533a\u4e8c\u91cc31\u53f7"}],"images":[{"h5_hole_image_path":"http:\/\/qnm.hunliji.com\/FgRC6lDn19qHP0w_dOmbatpMvH9z","trans_info":"1.000000,0.000000,0.000000,1.000000,23.239437,-1.056338","image_hole_id":390,"image_path":"http:\/\/qnm.hunliji.com\/Fn7KYm5np_1cntkjLbUQsBMrYPb3"}],"page_template_id":332},"pages":[{"page_template_id":275,"images":[{"h5_hole_image_path":"http:\/\/qnm.hunliji.com\/Ftg5j_j5t7WPDqFyEO1Q7IsdpC5H","trans_info":"1.000000,0.000000,0.000000,1.000000,0.000000,0.000000","image_hole_id":319,"image_path":"http:\/\/qnm.hunliji.com\/FgH5ApfV652QObLP5XQsjZOpBLSS"}]}],"audios_attributes":[{"id":null,"_destroy":false,"persistent_id":null,"selected":true,"audio_path":"http:\/\/qnvideo.hunliji.com\/n-LvZJP0teoKD9I40PDyXmbhuJQ=\/FlClnyykx8rqiloBXl00exMgGbIP.mp3","kind":3,"name":"\u7e41\u82b1"}]},"music":{"audio":"http:\/\/qnvideo.hunliji.com\/n-LvZJP0teoKD9I40PDyXmbhuJQ=\/FlClnyykx8rqiloBXl00exMgGbIP.mp3","img":"http:\/\/qnm.hunliji.com\/Fv22sY5AC_4vHRZnxnOdRJDyRT2j"},"page_icon":"http:\/\/qnm.hunliji.com\/FmJw5oBmjHpBp5Ann3SmNKi8ZI-w","share_img":"http:\/\/qnm.hunliji.com\/FgRC6lDn19qHP0w_dOmbatpMvH9z"},"current_time":1490457741};
+          // $.ajax({
+          //   url : weddingCard.url,
+          //   type:'get',
+          //   success:function(result){
+
               weddingCard.cardLength = result.data.page.length;
               var _es = result.data.page.length-1;
               weddingCard.eleCss = result.data.page[_es];
@@ -333,8 +333,8 @@
               })
 
 
-            }
-          })
+            // }
+          // })
         }
         weddingCard.rans = function(len) {
             if(localStorage.getItem('rans')){
@@ -425,7 +425,7 @@
 
                     if(_layout.layTemplate=='layTemplate_feedback'){
                         _obj.push(_html);
-                        appHtml()
+                        // appHtml()
                     }else{
                         _obj.push(_html);
                     }
@@ -666,17 +666,18 @@
             }
 
             function replySend(_data){console.log(1)
-              $.ajax({
-                url:weddingCard.api.reply,
-                type:'post',
-                data:_data,
-                success:function(result){
-                  console.log(result)
+              console.log(result)
                   weddingCard.numSend--;
-                  if(result.meta.status==200){weddingCard.msg('发送成功')}
+                  weddingCard.msg('发送成功')
+              // $.ajax({
+              //   url:weddingCard.api.reply,
+              //   type:'post',
+              //   data:_data,
+              //   success:function(result){
+                  
 
-                }
-              })
+              //   }
+              // })
             }
 
             function setStatus(){
@@ -867,11 +868,11 @@
                   }
                   document.addEventListener('DOMContentLoaded', musicInWeixinHandler);*/
 
-                  (function() {//weixin auto playmusic
-                      WeixinJSBridge.invoke('getNetworkType', {}, function(e) {
-                              document.getElementById('playMusic').play();
-                          });
-                  })()
+                  // (function() {//weixin auto playmusic
+                  //     WeixinJSBridge.invoke('getNetworkType', {}, function(e) {
+                  //             document.getElementById('playMusic').play();
+                  //         });
+                  // })()
         }
 
        weddingCard.is_weixin = function(){
@@ -927,7 +928,6 @@
               </div></div>\
               <div class="feedback_new">\
               <dl>\
-                <dt><span class="tabtn spk">发送回复</span><span style="position:relative" class="tabtn "><img style="position:absolute;top:-8px;right:-18px;width:30px;" src="http://qnm.hunliji.com/o_1b8tnchlc50711691e9h11rm143m.png"/>送“礼物”</span></dt>\
                 <dd>\
                   <div class="fb_lay"><div class="fb_form">\
                       <div class="fb_form_lay"><em>您的姓名</em><input class="reply_name rpyName01" type="text" maxlength="10" placeholder="请输入您的姓名"/></div>\
@@ -936,7 +936,7 @@
                       <div class="fb_form_lay" style="padding-bottom:6px"><em>甜蜜祝福</em><textarea class="reply_wish" placeholder='+weddingCard.wishCol+'></textarea></div>\
                   </div>\
                   <div class="fb_send">发送回复和祝福</div>\
-                  <div class="fb_link"><button class="fk_01"><i style="left:5px;" class="icon iconfont icon-daohang"></i>导航至婚宴地址</button><button class="fk_02"><i style="left:5px;" class="icon iconfont icon-plumage"></i>制作您的专属请帖</button></div></div>\
+                  <div class="fb_link"><button class="fk_01">导航至婚宴地址</button></div></div>\
                   \
                   <div class="fb_lay" style="display:none"><div class="fb_form">\
                       <div class="fb_form_lay" ><em>赠送人</em><input class="reply_name rpyName02" type="text" placeholder="请输入您的姓名"/></div>\
@@ -1314,12 +1314,12 @@
 
 
         weddingCard.giftSend = function(_data){
-          $.ajax({
-            url:weddingCard.api.reply,
-            type:'post',
-            data:_data,
-            success:function(res){
-              if(res.meta.status=='200'){
+          // $.ajax({
+          //   url:weddingCard.api.reply,
+          //   type:'post',
+          //   data:_data,
+          //   success:function(res){
+          //     if(res.meta.status=='200'){
                 weddingCard.sendState=false;
                 $('.rpyName01').val('');
                 $('.rpy').removeClass('ipk');
@@ -1361,9 +1361,9 @@
                         }
                     })
                 })
-              }
-            }
-          })
+          //     }
+          //   }
+          // })
         }
 
         weddingCard.cssUi = function(){
@@ -1392,24 +1392,26 @@
         }
 
         weddingCard.giftCommentData = function(){
-          $.ajax({
-            url:weddingCard.api.gifts_Comments,
-            type:'get',
-            data:{
-              card_id:weddingCard.cardId
-            },
-            success:function(res){
-              console.log(res)
-              weddingCard.dataStatus = true
-              weddingCard.userId = res.data.user_id
-              weddingCard.giftSouName = res.data.user_name
-              setTimeout(function(){
-                weddingCard.giftTop(res.data.gifts)
-                weddingCard.giftCommentList(res.data.replies)
-              },300)
+          var res = {"status":{"RetCode":0,"msg":"success"},"data":{"user_id":"5813992","user_name":"\u90ed\u4f1f\u548c\u7ae0\u6653\u71d5","gifts":[],"replies":[]},"current_time":1490457757};
+          weddingCard.dataStatus = true
+          weddingCard.userId = res.data.user_id
+          weddingCard.giftSouName = res.data.user_name
+          setTimeout(function(){
+            weddingCard.giftTop(res.data.gifts)
+            weddingCard.giftCommentList(res.data.replies)
+          },300)
+          // $.ajax({
+          //   url:weddingCard.api.gifts_Comments,
+          //   type:'get',
+          //   data:{
+          //     card_id:weddingCard.cardId
+          //   },
+          //   success:function(res){
+          //     console.log(res)
+              
 
-            }
-          })
+          //   }
+          // })
         }
 
         weddingCard.giftTop = function(gifts){
@@ -1618,17 +1620,18 @@
 
         weddingCard.sdkData = function(_data,_met){
           var obj = '{"events":['+JSON.stringify(_data)+']}';
-          if(weddingCard.isPreview==undefined){
-            $.ajax({
-              url:weddingCard.api.sdkData,
-              type:'post',
-              data:obj,
-              success:function(result){
-                console.log(result)
-                if(_met){_met()}
-              }
-            })
-          }
+          if(_met){_met()}
+          // if(weddingCard.isPreview==undefined){
+          //   $.ajax({
+          //     url:weddingCard.api.sdkData,
+          //     type:'post',
+          //     data:obj,
+          //     success:function(result){
+          //       console.log(result)
+          //       if(_met){_met()}
+          //     }
+          //   })
+          // }
 
         }
 
@@ -1660,21 +1663,6 @@
 
 
 
-<audio id="playMusic" preload="load" autoplay="" loop="" src="http://qnvideo.hunliji.com/n-LvZJP0teoKD9I40PDyXmbhuJQ=/FlClnyykx8rqiloBXl00exMgGbIP.mp3"></audio><script type="text/javascript">var wxData = {
-"appId": "",
-"imgUrl": "http://qnm.hunliji.com/FgRC6lDn19qHP0w_dOmbatpMvH9z?imageView2/2/w/200/h/200",
-"link": "https://www.hunliji.com/p/wedding/Public/wap/invitationCard/index.html?card_id=MzQ1OTE5OWZpcmVfY2xvdWQ&speech_id=MjU5NDU5OGZpcmVfY2xvdWQ",
-"desc": "郭伟与章晓燕要结婚了，诚挚邀请您光临。",
-"title": "郭伟与章晓燕的结婚邀请"
-};
+<audio id="playMusic" preload="load" autoplay="" loop="" src="http://qnvideo.hunliji.com/n-LvZJP0teoKD9I40PDyXmbhuJQ=/FlClnyykx8rqiloBXl00exMgGbIP.mp3"></audio>
 
-var wxDataer = {
-"appId": "",
-"imgUrl": "http://qnm.hunliji.com/FgRC6lDn19qHP0w_dOmbatpMvH9z?imageView2/2/w/200/h/200",
-"link": "https://www.hunliji.com/p/wedding/Public/wap/invitationCard/index.html?card_id=MzQ1OTE5OWZpcmVfY2xvdWQ&speech_id=MjU5NDU5OGZpcmVfY2xvdWQ",
-"desc": "郭伟与章晓燕要结婚了，诚挚邀请您光临。",
-"title": "郭伟与章晓燕的结婚邀请"
-};
-function getShareData(){
-return JSON.stringify(wxData);
-}</script></body></html>
+</body></html>
